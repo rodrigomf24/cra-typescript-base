@@ -1,0 +1,34 @@
+# System Stuff
+.DS_Store
+
+# build artifacts
+build/
+artifacts/
+
+# Javascript files (because we do -almost- only Typescript)
+*.js
+!packages/cli/index.js
+!packages/gateway-service/src/lambdas/*.js
+!tooling/*.js
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Coverage directory used by tools like istanbul
+**/coverage/
+**/.nyc_output/
+
+# Node related directories
+**/node_modules/
+**/lerna-debug.log
+.env
+
